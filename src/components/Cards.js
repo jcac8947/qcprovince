@@ -10,35 +10,35 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='images/img-9.jpg'
-              text='Explore the hidden waterfall deep inside the Amazon Jungle'
-              label='Adventure'
+              src='images/images.jfif'
+              text='The Ninoy Aquino Parks and Wildlife Center is a 23.85-hectare Protected Area located in Diliman, Quezon City, Philippines.'
+              label='Luxury'
               path='/services'
             />
             <CardItem
-              src='images/img-2.jpg'
-              text='Travel through the Islands of Bali in a Private Cruise'
-              label='Luxury'
+              src='images/image2.jfif'
+              text='Alibijaban is a small island located off the southeastern coast of Bondoc Peninsula in the Philippines.'
+              label='Adventure'
               path='/services'
             />
           </ul>
           <ul className='cards__items'>
             <CardItem
-              src='images/img-3.jpg'
-              text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
-              label='Mystery'
+              src='images/image3.jfif'
+              text='Mount Banahaw is an active complex volcano on Luzon in the Philippines. The three-peaked volcano is located at the boundary of Laguna and Quezon provinces.'
+              label='Adventure'
               path='/services'
             />
             <CardItem
-              src='images/img-4.jpg'
-              text='Experience Football on Top of the Himilayan Mountains'
-              label='Adventure'
+              src='images/image4.jfif'
+              text='Large church with religious attractions'
+              label='Religious'
               path='/products'
             />
             <CardItem
-              src='images/img-8.jpg'
-              text='Ride through the Sahara Desert on a guided camel tour'
-              label='Adrenaline'
+              src='images/image5.jfif'
+              text='Cagbalete is an island off the east coast of Luzon, Philippines on Lamon Bay. It is part of Quezon Province and administered by the municipality of Mauban.'
+              label='Adventure'
               path='/sign-up'
             />
           </ul>
