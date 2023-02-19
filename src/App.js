@@ -1,30 +1,22 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import HeroSection from './components/HeroSection'
-import Cards from './components/Cards';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import accomodation from './components/pages/Accomodation';
-import destination from './components/pages/Destination';
 import Home from './components/pages/Home';
-import signUp from './components/pages/SignUp';
+import Destination from './components/pages/Destination';
+import Accomodation from './components/pages/Accomodation';
+import SignUp from './components/pages/SignUp';
+
  
 function App() {
     return (
         <>
-        <Router>
-            <Navbar />
             <Routes>
-                <Route path="/" exact component={Home}/>
-                <Route path="/destination" component={destination}/>
-                <Route path="/accomodation" component={accomodation}/>
-                <Route path="/sign-up" component={signUp}/>
+                <Route path="/" element={<Home />} />
+                <Route path="/destination" element={<Destination />} />
+                <Route path="/accomodation" element={<Accomodation />} />
+                <Route path="/sign-up" element={<SignUp />} />
             </Routes>
-            <HeroSection/>
-            <Cards/>
-            <Footer/>
-        </Router>
+       
         </>
     );
 }

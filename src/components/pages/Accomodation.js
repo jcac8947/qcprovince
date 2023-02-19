@@ -1,8 +1,9 @@
 import React from 'react';
 import '../../App.css';
+import Navbar from '../Navbar';
 
-export default function accomodation() {
+export default function Accomodation() {
   return (
-    <div>accomodation</div>
+    <Navbar />
   )
 }
