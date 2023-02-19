@@ -67,7 +67,7 @@ function Footer() {
                     <div className='footer-logo'>
                         <Link to='/' className='social-logo'>
                             LAKBAY
-                            <i className='fab fa-typo3' />
+                            <i className='fas fa-hiking' />
                         </Link>
                     </div>
                     <small className='website-rights'>LAKBAY © 2023</small>
