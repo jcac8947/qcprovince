@@ -8,10 +8,10 @@ function Footer() {
         <div className='footer-container'>
             <section className='footer-subscription'>
                 <p className='footer-subscription-heading'>
-                    Join the Adventure newsletter to receive our best vacation deals
+                    Join the LAKBAY newsletter to receive our best vacation deals
                 </p>
                 <p className='footer-subscription-text'>
-                    You can unsubscribe at any time.
+                    You can unsubscribe at any time
                 </p>
                 <div className='input-areas'>
                     <form>
@@ -68,21 +68,26 @@ function Footer() {
                             <i class='fab fa-typo3' />
                         </Link>
                     </div>
-                    <small class='website-rights'></small>
-                    
-
-
+                    <small class='website-rights'>LAKBAY © 2023</small>
+                    <div class='social-icons'>
+                        <Link class='social-icon-link facebook' to='/' target='_blank' arial-label='Facebook'>
+                            <i class='fab fa-facebook-f' />
+                        </Link>
+                        <Link class='social-icon-link instagram' to='/' target='_blank' arial-label='Instagram'>
+                            <i class='fab fa-instagram' />
+                        </Link>
+                        <Link class='social-icon-link youtube' to='/' target='_blank' arial-label='Youtube'>
+                            <i class='fab fa-youtube' />
+                        </Link>
+                        <Link class='social-icon-link twitter' to='/' target='_blank' arial-label='Twitter'>
+                            <i class='fab fa-twitter' />
+                        </Link>
+                        <Link class='social-icon-link linkedin' to='/' target='_blank' arial-label='Linkedin'>
+                            <i class='fab fa-linkedin' />
+                        </Link>
+                    </div>
                 </div>
             </section>
-
-
-
-
-
-
-
-
-
         </div>
     );
 }

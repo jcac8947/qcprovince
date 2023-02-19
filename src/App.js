@@ -4,6 +4,7 @@ import './App.css';
 import HeroSection from './components/HeroSection'
 import Cards from './components/Cards';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import accomodation from './components/pages/Accomodation';
 import destination from './components/pages/Destination';
 import Home from './components/pages/Home';
@@ -22,6 +23,7 @@ function App() {
             </Routes>
             <HeroSection/>
             <Cards/>
+            <Footer/>
         </Router>
         </>
     );
