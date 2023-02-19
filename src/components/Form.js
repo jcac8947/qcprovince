@@ -24,7 +24,7 @@ function Form() {
 
   return (
     <div className="bg">
-    <div className="container">
+    <div className="container transbox">
       <form className="needs-validation" noValidate>
         <h1>Registration Form</h1>
         <div className="ui divider"></div>
