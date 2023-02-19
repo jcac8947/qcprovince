@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useMatch, useResolvedPath } from 'react-router-dom';
 import './Navbar.css';
 import { Button } from './Button'
 
 
-function Navbar() {
+export default function Navbar() {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
 
@@ -44,19 +44,19 @@ function Navbar() {
                     </Link>
                 </li>
                 <li className='nav-item'>
-                    <Link to="/destination" className='nav-links' onClick={closeMobileMenu}>
+                    <CustomLink to="/Destination" className='nav-links' onClick={closeMobileMenu}>
                         Destination
-                    </Link>
+                    </CustomLink>
                 </li>
                 <li className='nav-item'>
-                    <Link to="/accomodation" className='nav-links' onClick={closeMobileMenu}>
+                    <CustomLink to="/Accomodation" className='nav-links' onClick={closeMobileMenu}>
                         Accomodation
-                    </Link>
+                    </CustomLink>
                 </li>
                 <li className='nav-item'>
-                    <Link to="/sign-up" className='nav-links-mobile' onClick={closeMobileMenu}>
+                    <CustomLink to="/Sign-up" className='nav-links-mobile' onClick={closeMobileMenu}>
                         Sign-up
-                    </Link>
+                    </CustomLink>
                 </li>
             </ul>
             {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
@@ -66,4 +66,16 @@ function Navbar() {
   )
 }
 
-export default Navbar
+function CustomLink({ to, children, ...props}) {
+    const resolvedPath = useResolvedPath(to)
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true})
+
+    return (
+        <li className={isActive ? "active" : ""}>
+            <Link to={to} {...props}>
+                {children}
+            </Link>
+        </li>
+    )
+}
+
