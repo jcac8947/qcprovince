@@ -8,7 +8,7 @@ function Footer() {
         <div className='footer-container'>
             <section className='footer-subscription'>
                 <p className='footer-subscription-heading'>
-                    Join the LAKBAY newsletter to receive our best vacation deals
+                    Join the Lakbay newsletter to receive our best vacation deals
                 </p>
                 <p className='footer-subscription-text'>
                     You can unsubscribe at any time
@@ -66,7 +66,7 @@ function Footer() {
                 <div className='social-media-wrap'>
                     <div className='footer-logo'>
                         <Link to='/' className='social-logo'>
-                            LAKBAY
+                            Lakbay
                             <i className='fas fa-hiking' />
                         </Link>
                     </div>
