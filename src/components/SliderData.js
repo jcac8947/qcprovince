@@ -3,7 +3,7 @@
 export const SliderData = [
     {
       image:
-        '/images/salibungot_beach.JPG'
+        '/images/salibungot_beach.JPG',
     },
     {
       image:
