@@ -6,6 +6,7 @@ import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 
 const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
+  const [description, setDescription] = useState('');
   const length = slides.length;
 
   const nextSlide = () => {
@@ -28,13 +29,21 @@ const ImageSlider = ({ slides }) => {
         return (
           <div
             className={index === current ? 'slide active' : 'slide'}
-            key={index}
-          >
+            key={index}>
             {index === current && (
-              <img src={slide.image} alt='travel image' className='image' />
+              <img
+               src={slide.image} 
+               alt='travel image' 
+               className='image'
+               onMouseEnter={()=> setDescription(slide.description)}
+               onMouseLeave= {() => setDescription('')}/>
             )}
+              {index === current && (
+            <div className='description'>{description}</div>
+          )}
           </div>
         );
+        
       })}
     </section>
   );
