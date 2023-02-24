@@ -72,19 +72,19 @@ function Footer() {
                     </div>
                     <small className='website-rights'>LAKBAY © 2023</small>
                     <div className='social-icons'>
-                        <Link className='social-icon-link facebook' to='/' target='_blank' arial-label='Facebook'>
+                        <Link className='social-icon-link facebook' to='https://facebook.com' target='_blank' arial-label='Facebook'>
                             <i className='fab fa-facebook-f' />
                         </Link>
-                        <Link className='social-icon-link instagram' to='/' target='_blank' arial-label='Instagram'>
+                        <Link className='social-icon-link instagram' to='https://instagram.com' target='_blank' arial-label='Instagram'>
                             <i className='fab fa-instagram' />
                         </Link>
-                        <Link className='social-icon-link youtube' to='/' target='_blank' arial-label='Youtube'>
+                        <Link className='social-icon-link youtube' to='https://youtube.com' target='_blank' arial-label='Youtube'>
                             <i className='fab fa-youtube' />
                         </Link>
-                        <Link className='social-icon-link twitter' to='/' target='_blank' arial-label='Twitter'>
+                        <Link className='social-icon-link twitter' to='https://twitter.com' target='_blank' arial-label='Twitter'>
                             <i className='fab fa-twitter' />
                         </Link>
-                        <Link className='social-icon-link linkedin' to='/' target='_blank' arial-label='Linkedin'>
+                        <Link className='social-icon-link linkedin' to='https://linkedin.com' target='_blank' arial-label='Linkedin'>
                             <i className='fab fa-linkedin' />
                         </Link>
                     </div>
