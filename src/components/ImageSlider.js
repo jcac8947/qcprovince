@@ -22,31 +22,25 @@ const ImageSlider = ({ slides }) => {
   }
 
   return (
-    <section className='slider'>
-      <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
-      <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
-      {SliderData.map((slide, index) => {
-        return (
-          <div
-            className={index === current ? 'slide active' : 'slide'}
-            key={index}>
-            {index === current && (
-              <img
-               src={slide.image} 
-               alt='travel image' 
-               className='image'
-               onMouseEnter={()=> setDescription(slide.description)}
-               onMouseLeave= {() => setDescription('')}/>
-            )}
+    
+      <section className='slider'>
+        <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
+        <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
+        {SliderData.map((slide, index) => {
+          return (
+            <div className={index === current ? 'slide active' : 'slide'} key={index}>
+              <h3 className='image-title'>{slide.title}</h3>
               {index === current && (
-            <div className='description'>{description}</div>
-          )}
-          </div>
-        );
-        
-      })}
-    </section>
-  );
+                <img src={slide.image} alt='travel image' className='image' onMouseEnter={() => setDescription(slide.description)} onMouseLeave={() => setDescription('')} />
+              )}
+              {index === current && (
+                <div className='description'>{description}</div>
+              )}
+            </div>
+          );
+        })}
+      </section>
+    );
 };
 
 export default ImageSlider;
