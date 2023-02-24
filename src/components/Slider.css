@@ -7,9 +7,9 @@
   }
   
   .image {
-    width: 1000px;
-    height: 600px;
-    border-radius: 10px;
+    width: 1191px;
+    height: 610px;
+    border-radius: 1px;
   }
   
   .right-arrow {
@@ -73,3 +73,4 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bolder;
   }
+ 
