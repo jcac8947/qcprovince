@@ -9,6 +9,8 @@ const Content = ({ slides }) => {
   const [description, setDescription] = useState('');
   const lenght = slides.length;
 
+  const [imageUrl, setImageUrl] = useState('')
+
   const nextSlide = () => {
     setCurrent(current === lenght - 1 ? 0 : current + 1);
   };
@@ -21,17 +23,26 @@ const Content = ({ slides }) => {
     return null;
   }
 
+  const loadImage = async (path) => {
+    const image = await import(`../Images/${path}`);
+    //console.log(image)
+    setImageUrl(image.default);
+  }
+
+
+
   return (
     
       <section className='slider'>
         <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
         <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
         {ContentSlider.map((slide, index) => {
+          loadImage(slide.image)
           return (
             <div className={index === current ? 'slide active' : 'slide'} key={index}>
               <h3 className='image-title'>{slide.title}</h3>
               {index === current && (
-                <img src={slide.image} alt='travel image' className='image' onMouseEnter={() => setDescription(slide.description)} onMouseLeave={() => setDescription('')} />
+                <img src={imageUrl} alt='travel image' className='image' onMouseEnter={() => setDescription(slide.description)} onMouseLeave={() => setDescription('')} />
               )}
               {index === current && (
                 <div className='description'>{description}</div>
