@@ -7,17 +7,17 @@ import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const [description, setDescription] = useState('');
-  const length = slides.length;
+  const slider = slides.length;
 
   const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
+    setCurrent(current === slider - 1 ? 0 : current + 1);
   };
 
   const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
+    setCurrent(current === 0 ? slider - 1 : current - 1);
   };
 
-  if (!Array.isArray(slides) || slides.length <= 0) {
+  if (!Array.isArray(slides) || slides.slider <= 0) {
     return null;
   }
 
