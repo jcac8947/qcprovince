@@ -35,7 +35,7 @@ export const ContentSlider = [
       description: `
       Embrace an exquisite taste of royalty in a boast of queenly recreational sensation right in the southern part of Luzon. Your vacation will surely expunge your worries of being away from home. Welcome to Queen Margarette Hotel. Nestled eminently among the verdant shrubbery in the landscapes of the Southern Luzon spot is a metaphorical insignia of a queenly paradise. Just like a true-blooded queen, it stands lofty and majestic in the realm of Quezon Province’s recreational destinations. A place with the finest comforting vibes, Queen Margarette Hotel tenders one’s stay with once-in-a-lifetime experience endowed with placate and convenience in mind. Situated along Diversion Road, Lucena City, Queen Margarette Hotel offers the passers-by a vista beyond the mere peripheral stuff of travelling. One can enjoy the blend of classic and modern architecture in its perspective.
     `,
-    title: `Queen Magarette Hotel`
+    title: `Queen Margarette Hotel`
   },
   {
     image:

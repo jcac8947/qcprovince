@@ -9,7 +9,8 @@
   .image {
     width: 1191px;
     height: 610px;
-    border-radius: 1px;
+    border-top-right-radius:50px;
+    border-top-left-radius:50px;
   }
   
   .right-arrow {
