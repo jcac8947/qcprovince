@@ -8,9 +8,10 @@ import sunshine from '../Images/sunshine_farm.JPG';
 import banahaw from '../Images/mount_banahaw.JPG';
 import escudero from '../Images/villaEscudero.JPG';
 import balagbag from '../Images/balabag_falls.JPG';
-import mirador from '../Images/mount_mirador.JPG';
+
 import kanaway from '../Images/kanaway_beach.JPG';
 import lampas from '../Images/kwebang_lampas.JPG';
+import mirador from '../Images/mount_mirador.jpg';
 import dampalitan from '../Images/dampalitan_island.JPG';
 
 const images = [salibungot,borawan,sunshine,banahaw,escudero,balagbag,mirador,kanaway,lampas,dampalitan];
