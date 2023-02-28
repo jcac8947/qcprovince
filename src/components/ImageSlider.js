@@ -11,7 +11,7 @@ import balagbag from '../Images/balabag_falls.JPG';
 
 import kanaway from '../Images/kanaway_beach.JPG';
 import lampas from '../Images/kwebang_lampas.JPG';
-import mirador from '../Images/mount_mirador.jpg';
+import mirador from '../Images/mount_mirador.JPG';
 import dampalitan from '../Images/dampalitan_island.JPG';
 
 const images = [salibungot,borawan,sunshine,banahaw,escudero,balagbag,mirador,kanaway,lampas,dampalitan];
